@@ -105,7 +105,6 @@ module.exports = function(RED) {
         console.log("before [on]");
         console.log("sealights color:: before  " + global.$$SeaLights$$.getCurrentTestIdentifier());
         this.on('close',function() {
-            throw(new Error("after close error"));
             console.log("after [on]");
             console.log("sealights color:: after " + global.$$SeaLights$$.getCurrentTestIdentifier());
             for (var pid in node.activeProcesses) {

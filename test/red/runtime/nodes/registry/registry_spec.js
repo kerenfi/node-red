@@ -25,6 +25,7 @@ var events = require("../../../../../red/runtime/events");
 describe("red/nodes/registry/registry",function() {
 
     afterEach(function() {
+        throw(new Error("afterEach clear error"));
         typeRegistry.clear();
     });
 
