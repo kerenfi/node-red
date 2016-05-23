@@ -1,0 +1,8 @@
+{
+	"server": "https://dev-kobi-node-red-gw.sealights.co/api",
+	"interval": 10000,
+	"enabled": true,
+	"customerId": "kobi",
+	"appName": "node-red",
+	"environmentName": "env"
+}

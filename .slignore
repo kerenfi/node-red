@@ -1,0 +1,14 @@
+# ATT .slignore file
+
+editor/
+node_modules/
+public/
+Coverage/
+coverage/
+test/
+bin/
+.git/
+lib/
+Gruntfile.js
+red.js
+settings.js

@@ -33,6 +33,7 @@ var nodeTypeToId = {};
 var moduleNodes = {};
 
 function init(_settings,_loader) {
+    console.log("kobi-red/runtime/nodes/registry/registry.js [init]");
     settings = _settings;
     loader = _loader;
     if (settings.available()) {
@@ -397,6 +398,7 @@ function getNodeConstructor(type) {
 }
 
 function clear() {
+    console.log("kobi-red/runtime/nodes/registry/registry.js [clear]");
     nodeConfigCache = null;
     moduleConfigs = {};
     nodeList = [];
