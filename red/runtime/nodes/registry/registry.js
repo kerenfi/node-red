@@ -34,6 +34,7 @@ var moduleNodes = {};
 
 function init(_settings,_loader) {
     console.log("kobi-red/runtime/nodes/registry/registry.js [init]");
+    console.log(global.$$SeaLights$$.getCurrentTestIdentifier());
     settings = _settings;
     loader = _loader;
     if (settings.available()) {
@@ -399,6 +400,7 @@ function getNodeConstructor(type) {
 
 function clear() {
     console.log("kobi-red/runtime/nodes/registry/registry.js [clear]");
+    console.log(global.$$SeaLights$$.getCurrentTestIdentifier());
     nodeConfigCache = null;
     moduleConfigs = {};
     nodeList = [];
