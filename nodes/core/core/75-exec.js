@@ -102,7 +102,11 @@ module.exports = function(RED) {
                 node.activeProcesses[child.pid] = child;
             }
         });
+        console.log("before [on]");
+        console.log("sealights color:: before  " + global.$$SeaLights$$.getCurrentTestIdentifier());
         this.on('close',function() {
+            console.log("after [on]");
+            console.log("sealights color:: after " + global.$$SeaLights$$.getCurrentTestIdentifier());
             for (var pid in node.activeProcesses) {
                 if (node.activeProcesses.hasOwnProperty(pid)) {
                     node.activeProcesses[pid].kill();
