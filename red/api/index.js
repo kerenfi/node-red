@@ -61,7 +61,7 @@ var ensureRuntimeStarted = function(req,res,next) {
     }
 }
 
-function sealightQH() {
+var sealightQH = function sealightQH() {
     console.log("qh");
 }
 

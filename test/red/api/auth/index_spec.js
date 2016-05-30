@@ -25,10 +25,6 @@ var Users = require("../../../../red/api/auth/users");
 var Tokens = require("../../../../red/api/auth/tokens");
 
 
-describe("cover sealight qh", function() {
-   auth.sealightQH();
-    done();
-});
 
 describe("api auth middleware",function() {
 
