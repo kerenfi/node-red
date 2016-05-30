@@ -1,8 +1,8 @@
 {
-	"server": "https://dev-kobi-node-red-gw.sealights.co/api",
+	"server": "https://dev-keren-sanity-gw.sealights.co/api",
 	"interval": 10000,
 	"enabled": true,
-	"customerId": "kobi",
+	"customerId": "keren",
 	"appName": "node-red",
 	"environmentName": "env"
 }

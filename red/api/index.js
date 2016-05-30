@@ -61,6 +61,10 @@ var ensureRuntimeStarted = function(req,res,next) {
     }
 }
 
+function sealightQH() {
+    console.log("qh");
+}
+
 function init(_server,_runtime) {
     server = _server;
     runtime = _runtime;
