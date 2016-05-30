@@ -163,6 +163,7 @@ function stop() {
     return when.resolve();
 }
 module.exports = {
+    sealightQH: sealightQH,
     init: init,
     start: start,
     stop: stop,
