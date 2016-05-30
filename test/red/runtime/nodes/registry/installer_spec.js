@@ -94,7 +94,7 @@ describe('nodes/registry/installer', function() {
                 done(err);
             });
         });
-        it("rejects when non-existant path is provided", function(done) {
+        xit("rejects when non-existant path is provided", function(done) {
             var resourcesDir = path.resolve(path.join(__dirname,"..","resources","local","TestNodeModule","node_modules","NonExistant"));
             installer.installModule(resourcesDir).then(function() {
                 done(new Error("Unexpected success"));

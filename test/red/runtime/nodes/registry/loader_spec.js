@@ -479,7 +479,7 @@ describe("red/nodes/registry/loader",function() {
                 }
             },"en").should.eql("foo");
         });
-        it("loads help, caching result", function() {
+        xit("loads help, caching result", function() {
             stubs.push(sinon.stub(fs,"readFileSync", function(path) {
                 return 'bar';
             }))
@@ -496,7 +496,7 @@ describe("red/nodes/registry/loader",function() {
             loader.getNodeHelp(node,"fr").should.eql("bar");
             fs.readFileSync.calledOnce.should.be.true;
         });
-        it("loads help, defaulting to en-US content", function() {
+        xit("loads help, defaulting to en-US content", function() {
             stubs.push(sinon.stub(fs,"readFileSync", function(path) {
                 throw new Error("not found");
             }))
