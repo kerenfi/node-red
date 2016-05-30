@@ -27,12 +27,12 @@ describe("api index", function() {
     var app;
 
 
-    // describe("sealights qh", function() {
-    //    it("should fix qh", function(done) {
-    //        api.sealightQH();
-    //        done();
-    //    });
-    // });
+    describe("sealights qh", function() {
+       it("should fix qh", function(done) {
+           api.sealightQH();
+           done();
+       });
+    });
     describe("disables editor", function() {
         before(function() {
             api.init({},{
